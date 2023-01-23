@@ -24,12 +24,10 @@ int size = Convert.ToInt32(Console.ReadLine());
 if (size > 0)
 {
     int[] array = new int[size];
-    int index = 0;
-    while (index < size)
+    for (int index = 0; index < size; index++)
     {
         array[index] = index + 1;
         System.Console.Write($"{Math.Pow(array[index], 3)} ");
-        index++;
     }
 }
 else
