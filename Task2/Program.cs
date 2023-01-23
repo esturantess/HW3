@@ -49,6 +49,6 @@ coordsB[1] = Convert.ToInt32(Console.ReadLine());
 System.Console.Write("Введите координату Z второй точки: ");
 coordsB[2] = Convert.ToInt32(Console.ReadLine());
 
-double distance = Math.Sqrt(Math.Pow((coordsB[0] - coordsA[0]), 2) + Math.Pow((coordsB[1] - coordsA[1]), 2) + Math.Pow((coordsB[2] - coordsA[2]), 2));
+double distance = Math.Round((Math.Sqrt(Math.Pow((coordsB[0] - coordsA[0]), 2) + Math.Pow((coordsB[1] - coordsA[1]), 2) + Math.Pow((coordsB[2] - coordsA[2]), 2))), 2);
 
 System.Console.WriteLine($"Расстояние между точками А({coordsA[0]}, {coordsA[1]}, {coordsA[2]}) и B({coordsB[0]}, {coordsB[1]}, {coordsB[2]}) в 3D пространстве: {distance}");
