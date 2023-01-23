@@ -28,8 +28,8 @@
 
 // Второй способ
 
-int[] coordsA = new int[3];
-int[] coordsB = new int[3];
+double[] coordsA = new double[3];
+double[] coordsB = new double[3];
 
 System.Console.Write("Введите координату X первой точки: ");
 coordsA[0] = Convert.ToInt32(Console.ReadLine());
